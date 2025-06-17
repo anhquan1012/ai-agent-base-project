@@ -15,6 +15,6 @@ async def verify_api_key_middleware(request: Request, call_next):
         api_key = request.headers.get(configs.API_KEY_NAME)
         if api_key != configs.API_KEY:
             return JSONResponse(status_code=401, content={"detail": "Unauthorized"})
-    response = call_next(request)
+    response = await call_next(request)
     return response
     
