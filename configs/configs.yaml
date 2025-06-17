@@ -1,0 +1,5 @@
+ENV: ${ENVIRONMENT}
+LOGS_FOLDER: logs
+EXCLUDE_PATHS: ["/docs", "/redoc", "/openapi.json"]
+API_KEY_NAME: AI-API-KEY
+API_KEY: ${AI_API_KEY}
