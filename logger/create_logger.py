@@ -8,9 +8,9 @@ from configs import configs
 
 LOGS_DIR = os.path.join("./", configs.LOGS_FOLDER)
 os.makedirs(LOGS_DIR, exist_ok=True)
-LOGS_FILENAME = 'mta'
+LOGS_FILENAME = 'ai'
 LOGS_FORMATTER = "%(asctime)s - %(levelname)s - %(message)s"
-LOGS_NAME = 'mta_logger'
+LOGS_NAME = 'ai_logger'
 handler = TimedRotatingFileHandler(os.path.join(LOGS_DIR, LOGS_FILENAME + '.log'), 
                                 when="midnight", 
                                 interval=1, 
