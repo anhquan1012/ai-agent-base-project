@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get("/", tags=["healthcheck"])
 async def read_root():
-    return {"Hello": "World"}
+    return {"msg": "Hello world!"}
 
 @app.middleware("http")
 async def verify_api_key_middleware(request: Request, call_next):
